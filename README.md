@@ -12,6 +12,22 @@ This project is built with:
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
 
+## Key Features & Updates
+
+### 🎨 Branding & Design
+- **New Color Scheme**: Transitioned from Brand Pink to **Safety Yellow** (`#EED202`) for a bold, industrial look.
+- **Hero Visibility**: Implemented "glassy" backdrop overlays (`backdrop-blur`) on Hero sections to improve text readability over background images.
+- **Branding**: Updated to "A Sub Division of TheNexus" across all pages.
+
+### ⚡ UX Improvements
+- **Smooth Scrolling**: Automated smooth scrolling to the top of the page when navigating between routes.
+- **Navigation**: Fixed Footer Logo to correctly link back to the Home page.
+- **React Router v7**: Enabled future flags (`v7_startTransition`, `v7_relativeSplatPath`) for better performance and future-proofing.
+
+### 📞 Contact Info
+- **Email**: `pearlservices@thenexusrepo.com`
+- **Phone**: `+91 939 284 1433`
+
 ## Getting Started
 
 To run this project locally:
@@ -42,4 +58,4 @@ To run this project locally:
 ## Project Info
 
 - **Domain**: pearlservices.com
-- **Author**: Pearl Services - A division of Z The Nexus
+- **Author**: Pearl Services - A Sub Division of TheNexus
