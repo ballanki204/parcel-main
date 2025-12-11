@@ -31,7 +31,7 @@ const Services = () => {
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${servicesBg})` }}/>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-card/95 to-background/90"/>
+        <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]"/>
         
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">

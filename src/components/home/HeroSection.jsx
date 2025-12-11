@@ -14,7 +14,7 @@ export const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }}/>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/90"/>
+      <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]"/>
       
       <div className="container-custom py-12 md:py-20 lg:py-28 relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

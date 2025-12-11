@@ -71,7 +71,7 @@ const Contact = () => {
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${contactBg})` }}/>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-card/95 to-background/90"/>
+        <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]"/>
         
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -109,8 +109,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <a href="tel:+91XXXXXXXXXX" className="text-muted-foreground hover:text-primary transition-colors">
-                      +91 XXXXX XXXXX
+                    <a href="tel:+919392841433" className="text-muted-foreground hover:text-primary transition-colors">
+                      +91 9392841433
                     </a>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
                     <a href="mailto:info@pearlservices.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      info@pearlservices.com
+                      pearlservices@thenexusrepo.com
                     </a>
                   </div>
                 </div>

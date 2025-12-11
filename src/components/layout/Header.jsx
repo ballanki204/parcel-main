@@ -21,7 +21,7 @@ export const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg text-foreground leading-tight">Pearl Services</span>
-              <span className="text-[10px] text-muted-foreground leading-tight">by Z The Nexus</span>
+              <span className="text-[10px] text-muted-foreground leading-tight">A Sub Division of TheNexus</span>
             </div>
           </Link>
 
@@ -38,7 +38,7 @@ export const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:+91XXXXXXXXXX" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-4 h-4"/>
-              <span>+91 XXXXX XXXXX</span>
+              <span>+91 939 284 1433</span>
             </a>
             <Button asChild variant="default" className="btn-primary">
               <Link to="/contact">Book Service</Link>

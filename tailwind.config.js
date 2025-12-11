@@ -70,8 +70,8 @@ export default {
         },
         brand: {
           black: "hsl(var(--brand-black))",
-          pink: "hsl(var(--brand-pink))",
-          "pink-glow": "hsl(var(--brand-pink-glow))",
+          yellow: "hsl(var(--brand-pink))",
+          "yellow-glow": "hsl(var(--brand-pink-glow))",
           soft: "hsl(var(--brand-soft))",
         },
         sidebar: {
@@ -96,8 +96,8 @@ export default {
       boxShadow: {
         'soft': '0 6px 24px -6px hsl(0 0% 4% / 0.08)',
         'card': '0 4px 16px -4px hsl(0 0% 4% / 0.06)',
-        'glow': '0 0 40px hsl(340 100% 65% / 0.25)',
-        'button': '0 4px 14px -2px hsl(340 100% 65% / 0.4)',
+        'glow': '0 0 40px hsl(53 98% 47% / 0.25)',
+        'button': '0 4px 14px -2px hsl(53 98% 47% / 0.4)',
       },
       keyframes: {
         "accordion-down": {

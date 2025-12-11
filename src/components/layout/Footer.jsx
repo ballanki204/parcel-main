@@ -17,15 +17,15 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">P</span>
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-tight">Pearl Services</span>
-                <span className="text-[10px] text-background/60 leading-tight">by Z The Nexus</span>
+                <span className="text-[10px] text-background/60 leading-tight">A Sub Division of TheNexus</span>
               </div>
-            </div>
+            </Link>
             <p className="text-background/70 text-sm leading-relaxed">
               Delivering high-quality cleaning, security, and maintenance services backed by SOP excellence and trained manpower.
             </p>
@@ -61,11 +61,11 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm text-background/70">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0"/>
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 939 284 1433</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-background/70">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0"/>
-                <span>info@pearlservices.com</span>
+                <span>pearlservices@thenexusrepo.com</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5"/>
@@ -81,7 +81,7 @@ export const Footer = () => {
             © {new Date().getFullYear()} Pearl Services. All rights reserved.
           </p>
           <p className="text-sm text-background/60">
-            A division of <span className="text-primary font-medium">Z The Nexus</span>
+            A Sub division of <span className="text-primary font-medium">TheNexus</span>
           </p>
         </div>
       </div>

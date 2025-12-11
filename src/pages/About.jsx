@@ -17,7 +17,7 @@ const About = () => {
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${aboutBg})` }}/>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-card/95 to-background/90"/>
+        <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]"/>
         
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -123,8 +123,8 @@ const About = () => {
       {/* Parent Company */}
       <section className="section-padding bg-foreground text-background">
         <div className="container-custom text-center">
-          <p className="text-background/60 text-sm uppercase tracking-wider mb-4">A Division of</p>
-          <h2 className="text-3xl font-bold mb-4">Z The Nexus</h2>
+          <p className="text-background/60 text-sm uppercase tracking-wider mb-4">A Sub Division of</p>
+          <h2 className="text-3xl font-bold mb-4"> The Nexus</h2>
           <p className="text-background/70 max-w-2xl mx-auto">
             Pearl Services operates as a specialized facility management division, 
             bringing together expertise in cleaning, security, and maintenance under one trusted brand.
