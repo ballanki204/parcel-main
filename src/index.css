@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pearl Services Design System - Pearl Clean & Trust Palette */
+
+@layer base {
+  :root {
+    /* Brand Colors - Pearl Clean & Trust */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+    
+    --card: 240 5% 97%;
+    --card-foreground: 0 0% 4%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+    
+    --primary: 340 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 240 5% 97%;
+    --secondary-foreground: 0 0% 4%;
+    
+    --muted: 240 5% 97%;
+    --muted-foreground: 0 0% 42%;
+    
+    --accent: 340 100% 65%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 145 63% 42%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 40 100% 59%;
+    --warning-foreground: 0 0% 4%;
+    
+    --info: 210 100% 56%;
+    --info-foreground: 0 0% 100%;
+    
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 340 100% 65%;
+    
+    --radius: 0.75rem;
+    
+    /* Brand Specific */
+    --brand-black: 0 0% 4%;
+    --brand-pink: 340 100% 65%;
+    --brand-pink-glow: 340 100% 75%;
+    --brand-soft: 240 5% 97%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%) 0%, hsl(0 0% 12%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(340 100% 65%) 0%, hsl(340 100% 55%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(240 5% 97%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 6px 24px -6px hsl(0 0% 4% / 0.08);
+    --shadow-card: 0 4px 16px -4px hsl(0 0% 4% / 0.06);
+    --shadow-glow: 0 0 40px hsl(340 100% 65% / 0.25);
+    --shadow-button: 0 4px 14px -2px hsl(340 100% 65% / 0.4);
+    
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 340 100% 65%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+    
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 340 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+    
+    --accent: 340 100% 65%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 340 100% 65%;
+    
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 340 100% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 340 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold 
+           shadow-[var(--shadow-button)] transition-all duration-300 ease-out
+           hover:-translate-y-0.5 hover:shadow-[var(--shadow-glow)]
+           focus:outline-none focus:ring-4 focus:ring-primary/30;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-border bg-background 
+           text-foreground font-medium transition-all duration-200
+           hover:bg-card hover:border-primary/20;
+  }
+  
+  .btn-hero {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-lg
+           bg-primary text-primary-foreground shadow-[var(--shadow-button)]
+           transition-all duration-300 ease-out
+           hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]
+           focus:outline-none focus:ring-4 focus:ring-primary/30;
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-primary
+           text-primary font-semibold bg-transparent transition-all duration-200
+           hover:bg-primary hover:text-primary-foreground;
+  }
+  
+  .card-service {
+    @apply bg-card rounded-2xl p-6 shadow-[var(--shadow-card)] transition-all duration-300
+           hover:shadow-[var(--shadow-soft)] hover:-translate-y-1;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .input-field {
+    @apply w-full border border-border rounded-lg px-4 py-3 bg-background text-foreground
+           placeholder:text-muted-foreground transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary;
+  }
+  
+  .heading-hero {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight;
+  }
+  
+  .heading-section {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-[hsl(340,100%,55%)] bg-clip-text text-transparent;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(340 100% 65% / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(340 100% 65% / 0.5); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
