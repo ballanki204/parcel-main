@@ -23,6 +23,11 @@ This project is built with:
 - **Smooth Scrolling**: Automated smooth scrolling to the top of the page when navigating between routes.
 - **Navigation**: Fixed Footer Logo to correctly link back to the Home page.
 - **React Router v7**: Enabled future flags (`v7_startTransition`, `v7_relativeSplatPath`) for better performance and future-proofing.
+- **Customer Testimonials**: Added a dynamic client testimonials carousel with auto-scroll and zoom effects.
+
+### 🖼️ Assets Update
+- **Logo**: Updated Header and Footer with the official logo.
+- **Favicon**: Added custom favicon for better brand recognition.
 
 ### 📞 Contact Info
 - **Email**: `pearlservices@thenexusrepo.com`

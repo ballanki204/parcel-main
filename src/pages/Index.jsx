@@ -3,16 +3,19 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { IndustriesSection } from "@/components/home/IndustriesSection";
 import { WhyChooseSection } from "@/components/home/WhyChooseSection";
-import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { CTASection } from "@/components/home/CTASection";
+import ClientTestimonials from "@/components/home/ClientTestimonials";
+
 const Index = () => {
-    return (<Layout>
+    return (
+    <Layout>
       <HeroSection />
       <ServicesSection />
       <WhyChooseSection />
       <IndustriesSection />
-      <TestimonialsSection />
+      <ClientTestimonials />
       <CTASection />
-    </Layout>);
+    </Layout>
+    );
 };
 export default Index;

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/parsel-logo.png";
+
 const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
@@ -18,9 +20,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">P</span>
-              </div>
+              <img src={logo} alt="Pearl Services" className="w-12 h-12 object-contain" />
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-tight">Pearl Services</span>
                 <span className="text-[10px] text-background/60 leading-tight">A Sub Division of TheNexus</span>

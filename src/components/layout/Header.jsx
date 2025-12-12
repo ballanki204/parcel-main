@@ -8,6 +8,8 @@ const navLinks = [
     { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
 ];
+import logo from "@/assets/parsel-logo.png";
+
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
@@ -16,9 +18,7 @@ export const Header = () => {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">P</span>
-            </div>
+            <img src={logo} alt="Pearl Services" className="w-12 h-12 object-contain" />
             <div className="flex flex-col">
               <span className="font-bold text-lg text-foreground leading-tight">Pearl Services</span>
               <span className="text-[10px] text-muted-foreground leading-tight">A Sub Division of TheNexus</span>
