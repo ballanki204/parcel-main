@@ -16,7 +16,7 @@ export const HeroSection = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]"/>
       
-      <div className="container-custom py-12 md:py-20 lg:py-28 relative z-10">
+      <div className="container-custom py-12 md:py-18 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">

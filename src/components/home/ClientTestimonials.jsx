@@ -3,78 +3,103 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Star } from "lucide-react";
 
+import ramaImg from "../../assets/review-images/rama.png";
+import melodyImg from "../../assets/review-images/MELODY.jpg";
+import sangamImg from "../../assets/review-images/SANGAM & SARATH.jpg";
+import lelamahalImg from "../../assets/review-images/LELAMAHAL.avif";
+import ariffImg from "../../assets/review-images/ARIFF NURSING HOME.jpg";
+import premaImg from "../../assets/review-images/premahospatel.avif";
+import royalImg from "../../assets/review-images/royal.jpg";
+import mahathiImg from "../../assets/review-images/MAHATHI SOFTWARE SOLUTIONS PVT LTD.jpg";
+import yellamanchiliImg from "../../assets/review-images/yellamanchili.jpg";
+import aganamImg from "../../assets/review-images/AGANAM.avif";
+import kranthiImg from "../../assets/review-images/KRANTHI.avif";
+import aadharImg from "../../assets/review-images/addhar.jpg";
+
 const clients = [
   {
     name: "RAMATALKIES",
     type: "THEATER",
     review: "Excellent service quality and professional team. Highly recommended for theater maintenance.",
     rating: 5,
+    image: ramaImg,
   },
   {
     name: "MELODY",
     type: "THEATER",
     review: "Pearl Services has transformed our facility maintenance. Prompt and efficient support.",
     rating: 5,
+    image: melodyImg,
   },
   {
     name: "SANGAM & SARATH",
     type: "THEATER",
     review: "Reliable security and cleaning services. They understand the specific needs of cinema halls.",
     rating: 4,
+    image: sangamImg,
   },
   {
     name: "LELAMAHAL",
     type: "THEATER",
     review: "Great attention to detail. Our patrons have noticed the improved cleanliness.",
     rating: 5,
-  },
-  {
-    name: "ARIFF NURSING HOME",
-    type: "HOSPITAL",
-    review: "Hygiene is critical for us, and Pearl Services delivers impeccable cleaning standards.",
-    rating: 5,
-  },
-  {
-    name: "PREMA HOSPITAL",
-    type: "HOSPITAL",
-    review: "Reviewing their security protocols, we feel much safer. Professional staff and management.",
-    rating: 5,
-  },
-  {
-    name: "ROYAL PALACE",
-    type: "COMMERCIAL",
-    review: "Top-notch facility management. They handle everything smoothly so we can focus on our guests.",
-    rating: 5,
-  },
-  {
-    name: "MAHATHI SOFTWARE SOLUTIONS",
-    type: "PVT LTD",
-    review: "Professional corporate services. The office environment is always clean and welcoming.",
-    rating: 5,
-  },
-  {
-    name: "K.P.T.L YELLAMANCHILI",
-    type: "INDUSTRIAL",
-    review: "Strong manpower support and excellent site safety compliance. A trusted partner.",
-    rating: 4,
-  },
-  {
-    name: "K.P.T.L AGANAM PUDI",
-    type: "SITE",
-    review: "Efficient handling of site maintenance challenges. Very responsive team.",
-    rating: 5,
+    image: lelamahalImg,
   },
   {
     name: "KRANTHI",
     type: "THEATER",
     review: "Consistent quality service over the years. Best cleaning team in Vizag.",
     rating: 5,
+    image: kranthiImg,
+  },
+  {
+    name: "ARIFF NURSING HOME",
+    type: "HOSPITAL",
+    review: "Hygiene is critical for us, and Pearl Services delivers impeccable cleaning standards.",
+    rating: 5,
+    image: ariffImg,
+  },
+  {
+    name: "PREMA HOSPITAL",
+    type: "HOSPITAL",
+    review: "Reviewing their security protocols, we feel much safer. Professional staff and management.",
+    rating: 5,
+    image: premaImg,
+  },
+  {
+    name: "ROYAL PALACE",
+    type: "COMMERCIAL",
+    review: "Top-notch facility management. They handle everything smoothly so we can focus on our guests.",
+    rating: 5,
+    image: royalImg,
+  },
+  {
+    name: "MAHATHI SOFTWARE SOLUTIONS",
+    type: "PVT LTD",
+    review: "Professional corporate services. The office environment is always clean and welcoming.",
+    rating: 5,
+    image: mahathiImg,
+  },
+  {
+    name: "K.P.T.L YELLAMANCHILI",
+    type: "INDUSTRIAL",
+    review: "Strong manpower support and excellent site safety compliance. A trusted partner.",
+    rating: 4,
+    image: yellamanchiliImg,
+  },
+  {
+    name: "K.P.T.L AGANAM PUDI",
+    type: "SITE",
+    review: "Efficient handling of site maintenance challenges. Very responsive team.",
+    rating: 5,
+    image: aganamImg,
   },
   {
     name: "AADHAR CENTRE",
     type: "OFFICE",
     review: "Organized and disciplined staff. They maintain the office dignity and cleanliness perfectly.",
     rating: 5,
+    image: aadharImg,
   },
 ];
 
@@ -89,8 +114,16 @@ const TestimonialCard = ({ client }) => {
         &rdquo;
       </div>
       
-      <div className="mb-6 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-2xl relative z-10">
-        {client.name.charAt(0)}
+      <div className="mb-6 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-2xl relative z-10 overflow-hidden">
+        {client.image ? (
+          <img 
+            src={client.image} 
+            alt={client.name} 
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          client.name.charAt(0)
+        )}
       </div>
 
       <div className="flex gap-1 mb-4 relative z-10">
